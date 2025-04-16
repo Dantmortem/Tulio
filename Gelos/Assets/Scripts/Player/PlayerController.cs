@@ -45,8 +45,10 @@ public class PlayerController : MonoBehaviour
 
         if (mousePos.x < playerScreenPoint.x) {
             myAnimator.SetBool("isFacingRight",false);
+            transform.localScale = new Vector3(1f, 1f, 1f);
         } else {
             myAnimator.SetBool("isFacingRight",true);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
     }
 }
