@@ -7,8 +7,8 @@ public class SlotInventario : MonoBehaviour
 {
     public Item item;
     public Button botonSlot;
-    public Image imagenSlot; // Nuevo campo
-    public Text textoCantidad; // Nuevo campo
+    public Image imagenSlot;
+    public TMPro.TextMeshProUGUI textoCantidad;
     void Start()
     {
         botonSlot = GetComponent<Button>();
