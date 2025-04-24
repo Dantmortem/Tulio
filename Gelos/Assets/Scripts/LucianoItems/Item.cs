@@ -10,5 +10,8 @@ public class Item : MonoBehaviour
     public Sprite imagen;
     public ItemType tipo;
     public enum ItemType { Moneda, Pocion, Arma }
+    public bool esAcumulable;
+    public int cantidad = 1;
+
 
 }

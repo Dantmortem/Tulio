@@ -8,16 +8,20 @@ public class DineroUI : MonoBehaviour
     public Dinero dineroScript; // Referencia al script Dinero
     private Text textoDinero; // Referencia al texto del dinero
     void Start() 
+{
+    textoDinero = GameObject.Find("Texto_Dinero")?.GetComponent<Text>();
+    if(textoDinero != null && dineroScript != null)
     {
-        textoDinero = GameObject.Find("Texto_Dinero").GetComponent<Text>();
         textoDinero.text = "Dinero: " + dineroScript.dinero.ToString();
-        dineroScript.gameObject.GetComponent<Dinero>().dineroCambio += ActualizarTexto;
+        dineroScript.dineroCambio += ActualizarTextoDinero;
     }
+}
+
     void OnDestroy()
     {
-        dineroScript.gameObject.GetComponent<Dinero>().dineroCambio -= ActualizarTexto;
+        dineroScript.gameObject.GetComponent<Dinero>().dineroCambio -= ActualizarTextoDinero;
     }
-    void ActualizarTexto(int nuevoDinero)
+    void ActualizarTextoDinero(int nuevoDinero)
     {
         textoDinero.text = nuevoDinero.ToString();
     }

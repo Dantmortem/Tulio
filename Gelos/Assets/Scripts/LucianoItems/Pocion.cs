@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class Pocion : Item 
 {
-    public int cantidad;
     public Pocion() 
     {
         tipo = Item.ItemType.Pocion;

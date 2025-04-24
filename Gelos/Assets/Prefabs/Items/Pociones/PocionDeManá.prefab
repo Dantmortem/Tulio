@@ -101,4 +101,4 @@ MonoBehaviour:
   descripcion: "Restaura una peque\xF1a cantidad de Man\xE1"
   imagen: {fileID: 21300000, guid: 16a19be914363964790a17ef8b0bb192, type: 3}
   tipo: 1
-  cantidad: 0
+  cantidad: 1
