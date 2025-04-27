@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
     private void AdjustPlayerFacingDirection() {
-        Vector3 mousePos = Input.mousePosition;
+        Vector3 mousePos = Mouse.current.position.ReadValue();
         Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(transform.position);
 
         if (mousePos.x < playerScreenPoint.x) {
