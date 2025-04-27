@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class moneda : MonoBehaviour
 {
+    [SerializeField] AudioSource sound;
+    [SerializeField] AudioClip bonus;
+    
    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             Destroy(gameObject);
+            sound.PlayOneShot(bonus);
         }
     }
 }
