@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     public GameObject menuPanel; 
-    public GameObject inventoryPanel;
+    public GameObject Inventario;
 
     private PlayerControls controls;
     private void Awake()
@@ -16,8 +16,7 @@ public class MenuController : MonoBehaviour
     private void OpenMenu()
     {
         menuPanel.SetActive(!menuPanel.activeSelf);
-        inventoryPanel.SetActive(false);
-
+        Inventario.SetActive(false);
     }
     private void OnEnable()
     {

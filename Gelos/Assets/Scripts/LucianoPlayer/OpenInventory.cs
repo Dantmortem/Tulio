@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class OpenInventory : MonoBehaviour
 {
-    public GameObject inventoryPanel; 
+    public GameObject Inventario; 
     public void Open()
     {
-        inventoryPanel.SetActive(true);
+        Inventario.SetActive(true);
         GameObject panelMenu = transform.parent.gameObject;
         panelMenu.SetActive(false);
         Debug.Log("Se hizo clic");

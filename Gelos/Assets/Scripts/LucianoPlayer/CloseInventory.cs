@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CloseInventory : MonoBehaviour
 {
-    public GameObject inventoryPanel; 
+    public GameObject Inventario; 
     public GameObject panelMenu;
     public void Close()
     {
-        inventoryPanel.SetActive(false);
+        Inventario.SetActive(false);
         panelMenu.SetActive(true);
 
     }
