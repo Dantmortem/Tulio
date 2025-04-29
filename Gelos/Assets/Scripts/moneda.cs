@@ -11,8 +11,10 @@ public class moneda : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            sound.PlayOneShot(bonus);
+
+            AudioSource.PlayClipAtPoint(bonus, transform.position);
+            Destroy(gameObject, 0.3f);
+            
         }
     }
 }
