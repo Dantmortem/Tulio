@@ -5,4 +5,11 @@ using UnityEngine;
 
 public class EspadaDePiedra : Arma
 {
+    public EspadaDePiedra()
+    {
+        nombre = "Espada de Piedra";
+        tipo = ItemType.Arma;
+        fuerza = 8;
+        vitalidad = 3;
+    }
 }
