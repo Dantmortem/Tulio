@@ -6,6 +6,7 @@ public class MenuController : MonoBehaviour
 {
     public GameObject menuPanel; 
     public GameObject Inventario;
+    public GameObject Equipo;
 
     private PlayerControls controls;
     private void Awake()
@@ -17,6 +18,7 @@ public class MenuController : MonoBehaviour
     {
         menuPanel.SetActive(!menuPanel.activeSelf);
         Inventario.SetActive(false);
+        Equipo.SetActive(false);
     }
     private void OnEnable()
     {
