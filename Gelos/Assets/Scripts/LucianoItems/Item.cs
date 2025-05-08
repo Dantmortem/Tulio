@@ -25,5 +25,4 @@ public class Item : MonoBehaviour
     public string descripcion4;
     public string descripcion5;
 
-
 }

@@ -17,6 +17,7 @@ public class PanelInformacion : MonoBehaviour
     public TMPro.TextMeshProUGUI TextoLinea3;
     public TMPro.TextMeshProUGUI TextoLinea4;
     public TMPro.TextMeshProUGUI TextoLinea5;
+    public TMPro.TextMeshProUGUI NombreObjeto;
     public Image imagenItem;
     public void CargarInformacion(Item item)
     {
@@ -33,6 +34,7 @@ public class PanelInformacion : MonoBehaviour
         TextoLinea3.text = item.descripcion3;
         TextoLinea4.text = item.descripcion4;
         TextoLinea5.text = item.descripcion5;
+        NombreObjeto.text = item.nombre;
         imagenItem.sprite = item.imagen;
     }
 

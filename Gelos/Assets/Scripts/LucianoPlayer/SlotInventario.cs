@@ -9,59 +9,22 @@ public class SlotInventario : MonoBehaviour
     public Button botonSlot;
     public Image imagenSlot;
     public TMPro.TextMeshProUGUI textoCantidad;
-    public GameObject panelOpciones;
     public GameObject panelInformacion;
     public InventarioController controller;
     void Start()
     {
         botonSlot = GetComponent<Button>();
-        botonSlot.onClick.AddListener(MostrarOpciones);
-        GameObject panelOpcionesObj = transform.Find("OptionsSlot").gameObject;
-        Button botonInformacion = panelOpcionesObj.transform.Find("BotonInformacion").GetComponent<Button>(); // reemplaza "BotonInformacion" con el nombre real
-        botonInformacion.onClick.AddListener(AbrirInformacion);
-
     }
     public void MostrarOpciones()
     {
-        if (item != null)
-        {
-            controller.MostrarPanelOpciones(this);
-            botonSlot.interactable = false;
-            GameObject panelOpcionesObj = transform.Find("OptionsSlot").gameObject;
-            panelOpcionesObj.GetComponent<CanvasGroup>().blocksRaycasts = true; // Esto bloquea los clics hacia abajo
-            Invoke("AsignarEventoBotonInformacion", 0.1f);
-        }
-    }
-    public void AsignarEventoBotonInformacion()
-    {
-        Debug.Log("AbrirInformacion ejecutado");
-        controller.MostrarPanelInformacion(item);
-        GameObject panelOpcionesObj = transform.Find("OptionsSlot").gameObject;
-        Debug.Log("Panel de opciones encontrado: " + panelOpcionesObj.name);
-        Button botonInformacion = panelOpcionesObj.transform.Find("BotonInformacion").GetComponent<Button>();
-        Debug.Log("Botón Información encontrado: " + botonInformacion);
-        if(botonInformacion != null)
-        {
-            botonInformacion.onClick.AddListener(() => AbrirInformacion());
-            Debug.Log("Evento asignado correctamente");
-        }
-        else
-        {
-            Debug.Log("Botón Información no encontrado");
-        }
-        botonSlot.interactable = true; // reactiva el botón del slot si se cierra el panel
-        controller.OcultarPanelOpciones();
-
+        controller.slotActual = this;
+        MostrarPanelInformacion();
     }
 
     public void AbrirInformacion()
     {
         Debug.Log("AbrirInformacion se ejecuta");
         controller.MostrarPanelInformacion(item);
-    }
-    public void EquiparItem()
-    {
-        // Aquí irá el código para equipar el item
     }
     public void ActualizarSlot()
     {
@@ -82,6 +45,43 @@ public class SlotInventario : MonoBehaviour
         {
             imagenSlot.sprite = null;
             textoCantidad.enabled = false;
+        }
+    }
+    public void MostrarPanelInformacion()
+    {
+        if (item != null)
+        {
+            panelInformacion.SetActive(true);
+            panelInformacion.transform.Find("NombreObjeto").GetComponent<TMPro.TextMeshProUGUI>().text = item.nombre;
+            panelInformacion.transform.Find("TextoLinea1").GetComponent<TMPro.TextMeshProUGUI>().text = item.descripcion1;
+            panelInformacion.transform.Find("InfoCantidad").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.cantidad;
+            // También mostraremos los botones según el tipo de objeto
+            GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
+            GameObject botonUsar = panelInformacion.transform.Find("BotonUsar").gameObject;
+            if (item.tipo == Item.ItemType.Arma)
+            {
+                botonEquipar.SetActive(true);
+                botonUsar.SetActive(false);
+            }
+            else if (item.tipo == Item.ItemType.Pocion)
+            {
+                botonEquipar.SetActive(false);
+                botonUsar.SetActive(true);
+            }
+        }
+    }
+
+    public void EquiparItem()
+    {
+        panelInformacion.SetActive(false);
+    }
+    public void UsarItem()
+    {
+        item.cantidad--;
+        panelInformacion.SetActive(false);
+        if (item.cantidad <= 0)
+        {
+            controller.EliminarItem(this);
         }
     }
 }

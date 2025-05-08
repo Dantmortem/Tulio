@@ -10,6 +10,7 @@ public class EspadaDeMadera : Arma
         tipo = ItemType.Arma;
         fuerza = 5;
         vitalidad = 2;
+        descripcion1 = "Una Rustica espada hecha de madera de comun";
     }
 
 }
