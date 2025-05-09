@@ -18,7 +18,6 @@ public class PlayerStats : MonoBehaviour
     public int DañoTotal { get { return daño + (fuerza * 8) / 100 * daño + (vitalidad * 2) / 100 * daño;}}
     public int DañoEspecialTotal { get { return dañoEspecial + (fuerza * 5) / 100 * dañoEspecial + (magia * 8) / 100 * dañoEspecial;}}
     public int DefensaTotal { get { return defensa + (agilidad * 10) / 100 * defensa;}}
-    /*public int CalcularDañoRecibido (int daño){ return daño - (daño * DefensaTotal) / (DefensaTotal + 100);}*/
 
     void Start()
     {

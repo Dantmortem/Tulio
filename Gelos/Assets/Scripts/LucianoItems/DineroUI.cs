@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class DineroUI : MonoBehaviour
 {
-    public Dinero dineroScript; // Referencia al script Dinero
-    private Text textoDinero; // Referencia al texto del dinero
+    public Dinero dineroScript;
+    private Text textoDinero;
     void Start() 
 {
     textoDinero = GameObject.Find("Texto_Dinero")?.GetComponent<Text>();

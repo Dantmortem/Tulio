@@ -12,11 +12,10 @@ public class PruebaInventario : MonoBehaviour
     void Start()
     {
         PocionDeSalud.esAcumulable = true;
-        PocionDeSalud.cantidad = 5; //cambia el 5 por la cantidad que desees
+        PocionDeSalud.cantidad = 5;
         PocionDeManá.esAcumulable = true;
-        PocionDeManá.cantidad = 5; //cambia el 5 por la cantidad que desees
+        PocionDeManá.cantidad = 5;
 
-        // Asignar items a los slots
         Slots[0].item = EspadaDeMadera;
         Slots[1].item = PocionDeSalud;
         Slots[2].item = EspadaDePiedra;
