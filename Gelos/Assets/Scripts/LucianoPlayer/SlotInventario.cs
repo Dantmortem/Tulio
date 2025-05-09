@@ -64,7 +64,6 @@ public class SlotInventario : MonoBehaviour
             panelInformacion.transform.Find("InfoManá").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.mana;
             panelInformacion.transform.Find("InfoDefensa").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.defensa;
             panelInformacion.transform.Find("ImagenObjeto").GetComponent<Image>().sprite = item.imagen;
-            // También mostraremos los botones según el tipo de objeto
             GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
             GameObject botonUsar = panelInformacion.transform.Find("BotonUsar").gameObject;
             if (item.tipo == Item.ItemType.Arma)
