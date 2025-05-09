@@ -55,6 +55,15 @@ public class SlotInventario : MonoBehaviour
             panelInformacion.transform.Find("NombreObjeto").GetComponent<TMPro.TextMeshProUGUI>().text = item.nombre;
             panelInformacion.transform.Find("TextoLinea1").GetComponent<TMPro.TextMeshProUGUI>().text = item.descripcion1;
             panelInformacion.transform.Find("InfoCantidad").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.cantidad;
+            panelInformacion.transform.Find("InfoVitalidad").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.vitalidad;
+            panelInformacion.transform.Find("InfoFuerza").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.fuerza;
+            panelInformacion.transform.Find("InfoAgilidad").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.agilidad;
+            panelInformacion.transform.Find("InfoMagia").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.magia;
+            panelInformacion.transform.Find("InfoDaño").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.daño;
+            panelInformacion.transform.Find("InfoDañoEspecial").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.dañoEspecial;
+            panelInformacion.transform.Find("InfoManá").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.mana;
+            panelInformacion.transform.Find("InfoDefensa").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.defensa;
+            panelInformacion.transform.Find("ImagenObjeto").GetComponent<Image>().sprite = item.imagen;
             // También mostraremos los botones según el tipo de objeto
             GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
             GameObject botonUsar = panelInformacion.transform.Find("BotonUsar").gameObject;

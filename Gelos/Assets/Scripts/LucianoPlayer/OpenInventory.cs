@@ -10,8 +10,6 @@ public class OpenInventory : MonoBehaviour
         Inventario.SetActive(true);
         GameObject panelMenu = transform.parent.gameObject;
         panelMenu.SetActive(false);
-        Debug.Log("Se hizo clic");
-
     }
 
 }

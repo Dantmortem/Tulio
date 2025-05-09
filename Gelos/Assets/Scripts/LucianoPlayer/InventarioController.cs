@@ -5,29 +5,26 @@ using UnityEngine.UI;
 
 public class InventarioController : MonoBehaviour
 {
-    public GameObject panelInformacion;
-    public SlotInventario[] slots;
-    public SlotInventario slotActual;
-    void Start()
+    public GameObject panelInformacion; // Referencia al panel de información del inventario
+    public SlotInventario[] slots; // Arreglo de slots del inventario
+    public SlotInventario slotActual; // Slot actualmente seleccionado
+    void Start() 
     {
-        foreach (SlotInventario slot in slots)
+        foreach (SlotInventario slot in slots) 
         {
-            slot.panelInformacion = panelInformacion;
-            slot.controller = this;
+            slot.panelInformacion = panelInformacion; // Asigna el panel de información al slot
+            slot.controller = this; // Asigna el controlador del inventario al slot
         }
     }
-
-    public void MostrarPanelInformacion(Item item)
+    public void MostrarPanelInformacion(Item item) 
     {
-        panelInformacion.transform.SetSiblingIndex(10); // Para que se muestre encima
-        panelInformacion.SetActive(true);
-        panelInformacion.GetComponent<PanelInformacion>().CargarInformacion(item);
+        panelInformacion.SetActive(true); // Activa el panel de información
     }
-    public void EliminarItem(SlotInventario slot)
+    public void EliminarItem(SlotInventario slot) 
     {
-        if(slot.item != null)
+        if(slot.item != null) 
         {
-            slot.item = null;
+            slot.item = null; // Elimina el item del slot
         }
     }
 }
