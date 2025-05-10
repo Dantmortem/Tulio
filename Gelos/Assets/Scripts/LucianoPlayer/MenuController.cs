@@ -7,8 +7,8 @@ public class MenuController : MonoBehaviour
     public GameObject menuPanel; 
     public GameObject Inventario;
     public GameObject Equipo;
-
     private PlayerControls controls;
+    public MenuPlayerStats menuPlayerStats;
     private void Awake()
     {
         controls = new PlayerControls();
@@ -19,6 +19,7 @@ public class MenuController : MonoBehaviour
         menuPanel.SetActive(!menuPanel.activeSelf);
         Inventario.SetActive(false);
         Equipo.SetActive(false);
+        menuPlayerStats.StatsPlayerMenu();
     }
     private void OnEnable()
     {
@@ -28,5 +29,4 @@ public class MenuController : MonoBehaviour
     {
         controls.Gameplay.Disable();
     }
-
 }

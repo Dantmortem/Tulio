@@ -869,6 +869,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 772519420}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &46434001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1166,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 2090258284}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &48094249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,6 +1458,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 180780438}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &50720292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,6 +1843,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1762376371}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &57643398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,6 +2135,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 218367951}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &73162657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2627,6 +2642,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1965116200}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &93740358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2996,6 +3014,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1119532437}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &108821191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,7 +3346,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -3373,6 +3394,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3409,12 +3445,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 316.99994
+      value: -593
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -535.00006
+      value: -44.00003
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -4074,6 +4110,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 381687131}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &157316529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4368,6 +4407,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1898484497}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &158432846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4925,6 +4967,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1793976259}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &173797946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5867,12 +5912,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242304780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6845,6 +6890,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1690112846}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &272237167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7273,6 +7321,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 807310843}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &284329651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7688,6 +7739,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301917955}
   m_CullTransparentMesh: 1
+--- !u!1 &311762414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311762415}
+  - component: {fileID: 311762416}
+  m_Layer: 5
+  m_Name: PlayerStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &311762415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311762414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 982118461}
+  - {fileID: 1367334768}
+  - {fileID: 598725925}
+  - {fileID: 85246179}
+  - {fileID: 2087477474}
+  - {fileID: 1128676499}
+  - {fileID: 1373567101}
+  - {fileID: 1492397729}
+  - {fileID: 1134530907}
+  - {fileID: 1693371538}
+  - {fileID: 433200701}
+  - {fileID: 1859037151}
+  - {fileID: 1739067346}
+  - {fileID: 1342552216}
+  - {fileID: 1410625525}
+  - {fileID: 1073140514}
+  - {fileID: 979484530}
+  - {fileID: 613683258}
+  - {fileID: 551119370}
+  - {fileID: 1335447910}
+  - {fileID: 1114341387}
+  - {fileID: 242304781}
+  - {fileID: 1405586691}
+  - {fileID: 1439372949}
+  - {fileID: 1783939145}
+  - {fileID: 1467044686}
+  - {fileID: 995601317}
+  - {fileID: 1136624638}
+  m_Father: {fileID: 672621912}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &311762416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311762414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f872dedfcc3a547ae4191accc9a726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerstats: {fileID: 1359093365}
+  panel: {fileID: 311762414}
 --- !u!1 &323843273
 GameObject:
   m_ObjectHideFlags: 0
@@ -8477,6 +8606,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1011543748}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &350925631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8905,6 +9037,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 2008198385}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &356735310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9199,6 +9334,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1013519796}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &357347954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9568,6 +9706,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 582828633}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &376708651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10071,6 +10212,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 454473415}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &397114452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10569,6 +10713,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 698882535}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &407905080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10901,12 +11048,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433200700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12451,6 +12598,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1518489268}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &505109813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13282,6 +13432,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1284435620}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &531612977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13722,12 +13875,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551119369}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14214,6 +14367,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1049740412}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &562777575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14642,6 +14798,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1949150440}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &576262827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15204,6 +15363,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 800131739}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &589223437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15548,12 +15710,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613683257}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16081,7 +16243,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1831578341232902, guid: 21c03fded03f94d46a8e962c9be8eb64, type: 3}
       propertyPath: m_Name
@@ -16130,17 +16292,17 @@ PrefabInstance:
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.4147859
+      value: 2.2162
       objectReference: {fileID: 0}
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.4147859
+      value: 2.2162
       objectReference: {fileID: 0}
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.4147859
+      value: 2.2162
       objectReference: {fileID: 0}
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
@@ -16180,12 +16342,12 @@ PrefabInstance:
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.95474
+      value: 1.7755
       objectReference: {fileID: 0}
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00026256
+      value: -0.0004376
       objectReference: {fileID: 0}
     - target: {fileID: 224255975942686454, guid: 21c03fded03f94d46a8e962c9be8eb64,
         type: 3}
@@ -16804,6 +16966,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 882368806}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &671401436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16946,7 +17111,6 @@ GameObject:
   - component: {fileID: 672621912}
   - component: {fileID: 672621914}
   - component: {fileID: 672621913}
-  - component: {fileID: 672621915}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -16969,34 +17133,7 @@ RectTransform:
   - {fileID: 1958442647}
   - {fileID: 516806660}
   - {fileID: 208173751}
-  - {fileID: 982118461}
-  - {fileID: 1367334768}
-  - {fileID: 598725925}
-  - {fileID: 85246179}
-  - {fileID: 2087477474}
-  - {fileID: 1128676499}
-  - {fileID: 1373567101}
-  - {fileID: 1492397729}
-  - {fileID: 1134530907}
-  - {fileID: 1693371538}
-  - {fileID: 433200701}
-  - {fileID: 1859037151}
-  - {fileID: 1739067346}
-  - {fileID: 1342552216}
-  - {fileID: 1410625525}
-  - {fileID: 1073140514}
-  - {fileID: 979484530}
-  - {fileID: 613683258}
-  - {fileID: 551119370}
-  - {fileID: 1335447910}
-  - {fileID: 1114341387}
-  - {fileID: 242304781}
-  - {fileID: 1405586691}
-  - {fileID: 1439372949}
-  - {fileID: 1783939145}
-  - {fileID: 1467044686}
-  - {fileID: 995601317}
-  - {fileID: 1136624638}
+  - {fileID: 311762415}
   m_Father: {fileID: 1184441743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17042,20 +17179,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672621911}
   m_CullTransparentMesh: 1
---- !u!114 &672621915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672621911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f872dedfcc3a547ae4191accc9a726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerstats: {fileID: 0}
-  panel: {fileID: 672621911}
 --- !u!1001 &677445075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17294,6 +17417,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 152337440}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &677445079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17663,6 +17789,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 443167294}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &686752089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18166,6 +18295,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1610562834}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &708294218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18460,6 +18592,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1016149722}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &711022015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19456,6 +19591,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1712940004}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &773066312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20168,6 +20306,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 168571807}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &800142736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20730,6 +20871,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1454472490}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &808328336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21001,7 +21145,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -21049,6 +21193,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -21085,12 +21244,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 458
+      value: -451.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: 341.00003
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -21479,6 +21638,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1872958499}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &834327473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21541,7 +21703,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -21589,6 +21751,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -21625,12 +21802,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 458
+      value: -451.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -890.9999
+      value: -399.99985
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -21663,7 +21840,6 @@ GameObject:
   - component: {fileID: 839044207}
   - component: {fileID: 839044210}
   - component: {fileID: 839044209}
-  - component: {fileID: 839044208}
   - component: {fileID: 839044211}
   m_Layer: 5
   m_Name: PanelInformacion
@@ -21736,29 +21912,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1063.082, y: -428.068}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &839044208
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839044206}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 6
-  m_TargetDisplay: 0
 --- !u!114 &839044209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22196,6 +22349,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1514830949}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &851072970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22490,6 +22646,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1730462666}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &852268152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22779,6 +22938,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 967905908}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &858797400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23143,6 +23305,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1464107363}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &879283879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23512,6 +23677,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 465626303}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &879833696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23940,6 +24108,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1318535465}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &882868976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24291,7 +24462,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -24339,6 +24510,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -24375,12 +24561,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 458
+      value: -451.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -737.99994
+      value: -246.99991
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -24710,6 +24896,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 989001936}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &943846939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25004,6 +25193,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 830018525}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &950014720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25775,6 +25967,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 210618178}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &970352855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25990,12 +26185,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979484529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26635,6 +26830,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1078841468}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &988404285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26831,7 +27029,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -26879,6 +27077,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -26915,12 +27128,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 162
+      value: -747.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -303
+      value: 188.00003
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -27255,6 +27468,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 497284281}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &990501983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27411,12 +27627,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995601316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27967,6 +28183,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 278642828}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1011547455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28431,7 +28650,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -28479,6 +28698,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -28515,12 +28749,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 162
+      value: -747.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -890.99994
+      value: -399.9999
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -28921,6 +29155,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 564669932}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1042170281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29345,12 +29582,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073140513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29960,6 +30197,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1888506534}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1081772349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30116,12 +30356,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114341386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30530,12 +30770,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136624637}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31011,6 +31251,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 975640406}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1152419802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31305,6 +31548,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1634411345}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1168478895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32335,6 +32581,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 168040303}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1211997273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32629,6 +32878,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 2113483297}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1223794824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32923,6 +33175,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 288000419}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1230189471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33346,6 +33601,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 487393636}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1249835231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34873,12 +35131,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335447909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34988,7 +35246,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -35036,6 +35294,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -35072,12 +35345,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 458
+      value: -451.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -302.99994
+      value: 188.00009
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -35124,12 +35397,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342552215}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35680,6 +35953,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 352910672}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1357379073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35736,6 +36012,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1359093364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359093366}
+  - component: {fileID: 1359093365}
+  m_Layer: 5
+  m_Name: StatsPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359093365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359093364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afcd9931675390e439ca9d167ebd6655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitalidad: 10
+  fuerza: 10
+  agilidad: 10
+  magia: 10
+  vida: 100
+  mana: 100
+  "da\xF1o": 10
+  "da\xF1oEspecial": 15
+  defensa: 5
+--- !u!224 &1359093366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359093364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1748782941}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1365769989
 GameObject:
   m_ObjectHideFlags: 0
@@ -36061,6 +36394,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1205506331}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1387764545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36430,6 +36766,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1405624269}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1392590401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36795,12 +37134,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405586690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37276,6 +37615,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 740901298}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1408284067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37432,12 +37774,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410625524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38047,6 +38389,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 716688558}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1430910231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38341,6 +38686,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1812236735}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1435500438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38422,12 +38770,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439372948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38764,6 +39112,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 660255042}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1440141436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39463,12 +39814,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467044685}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39810,6 +40161,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 398320026}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1472339352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41218,6 +41572,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535635057}
   m_CullTransparentMesh: 1
+--- !u!1 &1542386662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1392657777678570, guid: ccd64f90b962e4a789be11ce73c18abe,
+    type: 3}
+  m_PrefabInstance: {fileID: 249792167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1561750758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41531,6 +41891,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 254856759}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1563600908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41733,7 +42096,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -41781,6 +42144,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -41817,12 +42195,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 162
+      value: -747.99994
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -738
+      value: -246.99997
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -41876,6 +42254,7 @@ MonoBehaviour:
   menuPanel: {fileID: 1184441739}
   Inventario: {fileID: 1040585557}
   Equipo: {fileID: 2106925974}
+  menuPlayerStats: {fileID: 311762416}
 --- !u!4 &1598978912
 Transform:
   m_ObjectHideFlags: 0
@@ -42773,6 +43152,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1498573925}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1636790733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43499,6 +43881,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 725253902}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1653213775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44464,6 +44849,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1991173061}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1698522788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44753,6 +45141,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 954041697}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1702672033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45524,6 +45915,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 345847605}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1733277200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45605,12 +45999,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739067345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -45905,27 +46299,12 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.32438758}
   m_Size: {x: 0.5, y: 0.88716954}
   m_Direction: 0
---- !u!114 &1748782937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!224 &1748782941 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3923106789946263410, guid: ace4f6434bb52db4b8b3f280fc657734,
+    type: 3}
+  m_PrefabInstance: {fileID: 8626237713643976508}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748782931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afcd9931675390e439ca9d167ebd6655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitalidad: 10
-  fuerza: 10
-  agilidad: 10
-  magia: 10
-  vida: 100
-  mana: 100
-  "da\xF1o": 10
-  "da\xF1oEspecial": 15
-  defensa: 5
 --- !u!1001 &1754298234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46159,6 +46538,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1232012968}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1754298238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46448,6 +46830,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1990866077}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1758014122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46951,6 +47336,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 526437000}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1770264356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47300,12 +47688,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783939144}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -48416,6 +48804,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 819145834}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1827852743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48647,12 +49038,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859037150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 672621912}
+  m_Father: {fileID: 311762415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -49419,6 +49810,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1310197968}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1879153429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49713,6 +50107,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 254412306}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1882326799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50134,7 +50531,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 672621912}
+    m_TransformParent: {fileID: 311762415}
     m_Modifications:
     - target: {fileID: 1677181036072380, guid: cb2501e8890a6418d867d2c7159ffc5a, type: 3}
       propertyPath: m_Name
@@ -50182,6 +50579,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -50218,12 +50630,12 @@ PrefabInstance:
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 162
+      value: -748
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: 341
       objectReference: {fileID: 0}
     - target: {fileID: 224155344785641212, guid: cb2501e8890a6418d867d2c7159ffc5a,
         type: 3}
@@ -50762,6 +51174,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1011969883}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1917980499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51206,6 +51621,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1507857937}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1931339607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51500,6 +51918,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1670348327}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1946220787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51928,6 +52349,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1773391268}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1957100171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52363,6 +52787,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 424932597}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1961916745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52861,6 +53288,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 579070092}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &1968429641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53939,6 +54369,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 200646339}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2005336067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54576,6 +55009,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1118064038}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2018881065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54870,6 +55306,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 955110706}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2022654187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55227,6 +55666,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 643758640}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2045688169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55671,6 +56113,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1290439540}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2052694034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56405,6 +56850,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 1051498180}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2090435508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56700,6 +57148,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 14375210}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2100573656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56994,6 +57445,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 86286508}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2106619982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57460,6 +57914,9 @@ MonoBehaviour:
   textoCantidad: {fileID: 593467580}
   panelInformacion: {fileID: 839044206}
   controller: {fileID: 1040585559}
+  jugador: {fileID: 1359093365}
+  menuPlayerStats: {fileID: 311762416}
+  ranuraArma: {fileID: 1542386662}
 --- !u!114 &2121435651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57816,16 +58273,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3923106789946263410, guid: ace4f6434bb52db4b8b3f280fc657734,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359093366}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9077684592071084656, guid: ace4f6434bb52db4b8b3f280fc657734,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1748782936}
-    - targetCorrespondingSourceObject: {fileID: 9077684592071084656, guid: ace4f6434bb52db4b8b3f280fc657734,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1748782937}
   m_SourcePrefab: {fileID: 100100000, guid: ace4f6434bb52db4b8b3f280fc657734, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

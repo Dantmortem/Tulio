@@ -11,9 +11,20 @@ public class SlotInventario : MonoBehaviour
     public TMPro.TextMeshProUGUI textoCantidad;
     public GameObject panelInformacion;
     public InventarioController controller;
+    public PlayerStats jugador;
+    public MenuPlayerStats menuPlayerStats;
+    public GameObject ranuraArma;
+
     void Start()
     {
+        Debug.Log("Jugador: " + jugador);
         botonSlot = GetComponent<Button>();
+        if (panelInformacion.transform.Find("BotonEquipar").gameObject.GetComponent<Button>().onClick.GetPersistentEventCount() == 0)
+        {
+            GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
+            botonEquipar.GetComponent<Button>().onClick.AddListener(EquiparObjeto);
+        }
+
     }
     public void MostrarOpciones()
     {
@@ -49,6 +60,7 @@ public class SlotInventario : MonoBehaviour
     }
     public void MostrarPanelInformacion()
     {
+        item = (Item)this.gameObject.GetComponent<SlotInventario>().item;
         if (item != null)
         {
             panelInformacion.SetActive(true);
@@ -78,11 +90,6 @@ public class SlotInventario : MonoBehaviour
             }
         }
     }
-
-    public void EquiparItem()
-    {
-        panelInformacion.SetActive(false);
-    }
     public void UsarItem()
     {
         item.cantidad--;
@@ -92,6 +99,25 @@ public class SlotInventario : MonoBehaviour
             controller.EliminarItem(this);
         }
     }
+    public void EquiparObjeto()
+    {
+        Debug.Log("Item: " + item);
+        jugador.vitalidad += item.vitalidad;
+        jugador.fuerza += item.fuerza;
+        jugador.agilidad += item.agilidad;
+        jugador.magia += item.magia;
+        jugador.daño += item.daño;
+        jugador.dañoEspecial += item.dañoEspecial;
+        jugador.mana += item.mana;
+        jugador.defensa += item.defensa;
+        menuPlayerStats.ActualizarEstadisticasJugador();
+        panelInformacion.SetActive(false);
+        this.item = null;
+        GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
+        ArmaImage.GetComponent<Image>().sprite = item.imagen;
+    }
+    
+
 }
 
 
