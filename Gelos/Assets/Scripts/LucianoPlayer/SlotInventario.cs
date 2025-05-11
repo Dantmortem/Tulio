@@ -19,12 +19,6 @@ public class SlotInventario : MonoBehaviour
     {
         Debug.Log("Jugador: " + jugador);
         botonSlot = GetComponent<Button>();
-        if (panelInformacion.transform.Find("BotonEquipar").gameObject.GetComponent<Button>().onClick.GetPersistentEventCount() == 0)
-        {
-            GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
-            botonEquipar.GetComponent<Button>().onClick.AddListener(EquiparObjeto);
-        }
-
     }
     public void MostrarOpciones()
     {
@@ -81,12 +75,16 @@ public class SlotInventario : MonoBehaviour
             if (item.tipo == Item.ItemType.Arma)
             {
                 botonEquipar.SetActive(true);
+                botonEquipar.GetComponent<Button>().onClick.RemoveAllListeners();
+                botonEquipar.GetComponent<Button>().onClick.AddListener(() => EquiparObjeto());
                 botonUsar.SetActive(false);
             }
             else if (item.tipo == Item.ItemType.Pocion)
             {
                 botonEquipar.SetActive(false);
                 botonUsar.SetActive(true);
+                botonUsar.GetComponent<Button>().onClick.RemoveAllListeners();
+                botonUsar.GetComponent<Button>().onClick.AddListener(() => UsarItem());
             }
         }
     }
@@ -110,11 +108,17 @@ public class SlotInventario : MonoBehaviour
         jugador.dañoEspecial += item.dañoEspecial;
         jugador.mana += item.mana;
         jugador.defensa += item.defensa;
+        controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
         menuPlayerStats.ActualizarEstadisticasJugador();
         panelInformacion.SetActive(false);
-        this.item = null;
         GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
+        Debug.Log("ArmaImage: " + ArmaImage);
+        Debug.Log("ArmaImage GetComponent<Image>(): " + ArmaImage.GetComponent<Image>());
+        Debug.Log("item: " + item);
+        Debug.Log("item.imagen: " + item.imagen);
         ArmaImage.GetComponent<Image>().sprite = item.imagen;
+        this.item = null;
+
     }
     
 
