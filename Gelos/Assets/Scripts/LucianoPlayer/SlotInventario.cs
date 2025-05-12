@@ -14,7 +14,7 @@ public class SlotInventario : MonoBehaviour
     public PlayerStats jugador;
     public MenuPlayerStats menuPlayerStats;
     public GameObject ranuraArma;
-
+    public RanuraArmaController ranuraArmaController;
     void Start()
     {
         Debug.Log("Jugador: " + jugador);
@@ -69,6 +69,7 @@ public class SlotInventario : MonoBehaviour
             panelInformacion.transform.Find("InfoDañoEspecial").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.dañoEspecial;
             panelInformacion.transform.Find("InfoManá").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.mana;
             panelInformacion.transform.Find("InfoDefensa").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.defensa;
+            panelInformacion.transform.Find("InfoPuntosDeVida").GetComponent<TMPro.TextMeshProUGUI>().text = "" + item.puntosdevida;
             panelInformacion.transform.Find("ImagenObjeto").GetComponent<Image>().sprite = item.imagen;
             GameObject botonEquipar = panelInformacion.transform.Find("BotonEquipar").gameObject;
             GameObject botonUsar = panelInformacion.transform.Find("BotonUsar").gameObject;
@@ -90,16 +91,6 @@ public class SlotInventario : MonoBehaviour
     }
     public void UsarItem()
     {
-        item.cantidad--;
-        panelInformacion.SetActive(false);
-        if (item.cantidad <= 0)
-        {
-            controller.EliminarItem(this);
-        }
-    }
-    public void EquiparObjeto()
-    {
-        Debug.Log("Item: " + item);
         jugador.vitalidad += item.vitalidad;
         jugador.fuerza += item.fuerza;
         jugador.agilidad += item.agilidad;
@@ -108,14 +99,33 @@ public class SlotInventario : MonoBehaviour
         jugador.dañoEspecial += item.dañoEspecial;
         jugador.mana += item.mana;
         jugador.defensa += item.defensa;
+        jugador.vida += item.puntosdevida;
+        item.cantidad--;
+        menuPlayerStats.ActualizarEstadisticasJugador();
+        controller.slotActual.transform.Find(controller.slotActual.name + "Texto").GetComponent<TMPro.TextMeshProUGUI>().text = controller.slotActual.item.cantidad.ToString();
+        panelInformacion.SetActive(false);
+        if (item.cantidad <= 0)
+        {
+            controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
+            controller.EliminarItem(this);
+        }
+    }
+    public void EquiparObjeto()
+    {
+        jugador.vitalidad += item.vitalidad;
+        jugador.fuerza += item.fuerza;
+        jugador.agilidad += item.agilidad;
+        jugador.magia += item.magia;
+        jugador.daño += item.daño;
+        jugador.dañoEspecial += item.dañoEspecial;
+        jugador.mana += item.mana;
+        jugador.defensa += item.defensa;
+        jugador.vida += item.puntosdevida;
+        ranuraArmaController.itemActual = this.item;
         controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
         menuPlayerStats.ActualizarEstadisticasJugador();
         panelInformacion.SetActive(false);
         GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
-        Debug.Log("ArmaImage: " + ArmaImage);
-        Debug.Log("ArmaImage GetComponent<Image>(): " + ArmaImage.GetComponent<Image>());
-        Debug.Log("item: " + item);
-        Debug.Log("item.imagen: " + item.imagen);
         ArmaImage.GetComponent<Image>().sprite = item.imagen;
         this.item = null;
 

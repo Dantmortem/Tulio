@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PanelInformacion : MonoBehaviour
 {
+    public GameObject panel;
     public TMPro.TextMeshProUGUI InfoVitalidad;
     public TMPro.TextMeshProUGUI InfoFuerza;
     public TMPro.TextMeshProUGUI infoAgilidad;
@@ -12,6 +13,8 @@ public class PanelInformacion : MonoBehaviour
     public TMPro.TextMeshProUGUI InfoDañoEspecial;
     public TMPro.TextMeshProUGUI InfoManá;
     public TMPro.TextMeshProUGUI InfoDefensa;
+    public TMPro.TextMeshProUGUI InfoPuntosDeVida;
+    public TMPro.TextMeshProUGUI Infocantidad;
     public TMPro.TextMeshProUGUI TextoLinea1;
     public TMPro.TextMeshProUGUI TextoLinea2;
     public TMPro.TextMeshProUGUI TextoLinea3;

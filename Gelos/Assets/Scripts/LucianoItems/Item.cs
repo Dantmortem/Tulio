@@ -19,6 +19,7 @@ public class Item : MonoBehaviour
     public int dañoEspecial = 0;
     public int mana = 0;
     public int defensa = 0;
+    public int puntosdevida;
     public string descripcion1;
     public string descripcion2;
     public string descripcion3;
