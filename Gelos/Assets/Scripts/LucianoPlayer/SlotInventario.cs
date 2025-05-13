@@ -15,6 +15,7 @@ public class SlotInventario : MonoBehaviour
     public MenuPlayerStats menuPlayerStats;
     public GameObject ranuraArma;
     public RanuraArmaController ranuraArmaController;
+    public PanelRanuraArma panelRanuraArma;
     void Start()
     {
         Debug.Log("Jugador: " + jugador);
@@ -107,27 +108,51 @@ public class SlotInventario : MonoBehaviour
         if (item.cantidad <= 0)
         {
             controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
+            controller.slotActual.transform.Find(controller.slotActual.name + "Texto").GetComponent<TMPro.TextMeshProUGUI>().text = null;
             controller.EliminarItem(this);
         }
     }
     public void EquiparObjeto()
     {
-        jugador.vitalidad += item.vitalidad;
-        jugador.fuerza += item.fuerza;
-        jugador.agilidad += item.agilidad;
-        jugador.magia += item.magia;
-        jugador.daño += item.daño;
-        jugador.dañoEspecial += item.dañoEspecial;
-        jugador.mana += item.mana;
-        jugador.defensa += item.defensa;
-        jugador.vida += item.puntosdevida;
-        ranuraArmaController.itemActual = this.item;
-        controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
-        menuPlayerStats.ActualizarEstadisticasJugador();
-        panelInformacion.SetActive(false);
-        GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
-        ArmaImage.GetComponent<Image>().sprite = item.imagen;
-        this.item = null;
+        if (ranuraArmaController.itemActual == null){
+            jugador.vitalidad += item.vitalidad;
+            jugador.fuerza += item.fuerza;
+            jugador.agilidad += item.agilidad;
+            jugador.magia += item.magia;
+            jugador.daño += item.daño;
+            jugador.dañoEspecial += item.dañoEspecial;
+            jugador.mana += item.mana;
+            jugador.defensa += item.defensa;
+            jugador.vida += item.puntosdevida;
+            ranuraArmaController.itemActual = this.item;
+            controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
+            menuPlayerStats.ActualizarEstadisticasJugador();
+            panelInformacion.SetActive(false);
+            GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
+            ArmaImage.GetComponent<Image>().sprite = item.imagen;
+            this.item = null;
+        }
+        else
+        {
+            panelRanuraArma.DesequiparArma();
+            jugador.vitalidad += item.vitalidad;
+            jugador.fuerza += item.fuerza;
+            jugador.agilidad += item.agilidad;
+            jugador.magia += item.magia;
+            jugador.daño += item.daño;
+            jugador.dañoEspecial += item.dañoEspecial;
+            jugador.mana += item.mana;
+            jugador.defensa += item.defensa;
+            jugador.vida += item.puntosdevida;
+            ranuraArmaController.itemActual = this.item;
+            controller.slotActual.transform.Find(controller.slotActual.name + "Image").GetComponent<Image>().sprite = null;
+            menuPlayerStats.ActualizarEstadisticasJugador();
+            panelInformacion.SetActive(false);
+            GameObject ArmaImage = ranuraArma.transform.Find("ArmaImage").gameObject;
+            ArmaImage.GetComponent<Image>().sprite = item.imagen;
+            this.item = null;
+        }
+        
 
     }
     

@@ -17,7 +17,7 @@ public class PanelRanuraArma : MonoBehaviour
         botonDesequipar.onClick.AddListener(DesequiparArma);
         botonCerrar.onClick.AddListener(CerrarPanel);
     }
-    private void DesequiparArma()
+    public void DesequiparArma()
     {
         jugador.vitalidad -= ranuraArmaController.itemActual.vitalidad;
         jugador.fuerza -= ranuraArmaController.itemActual.fuerza;
