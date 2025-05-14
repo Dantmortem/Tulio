@@ -12,7 +12,7 @@ public class AreaEntrance : MonoBehaviour
             PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
             player.transform.position = transform.position;
             SceneManagement.Instance.SetTransitionName("");
-            UIFade.Instance.FadeToClear(); // Activar fade a claro
+            UIFade.Instance.FadeToClear();
         }
     }
 

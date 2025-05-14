@@ -9,7 +9,6 @@ public class SceneManagement : Singleton<SceneManagement>
     {
         SceneTransitionName = name;
     }
-    // Nueva función para cargar escena asíncrona de forma aditiva
     public void LoadSceneAdditiveAsync(string sceneName)
     {
         StartCoroutine(LoadSceneAsync(sceneName));
@@ -22,7 +21,6 @@ public class SceneManagement : Singleton<SceneManagement>
             yield return null;
         }
     }
-    // Nueva función para descargar escena asíncrona
     public void UnloadSceneAsync(string sceneName)
     {
         StartCoroutine(UnloadSceneAsyncProcess(sceneName));

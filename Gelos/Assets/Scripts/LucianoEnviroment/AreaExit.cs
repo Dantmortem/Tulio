@@ -32,7 +32,7 @@ public class AreaExit : MonoBehaviour
     }
     private IEnumerator WaitAndLoad()
     {
-        yield return new WaitForSeconds(1f); // Espera a que el fade termine
+        yield return new WaitForSeconds(1f);
         SceneManagement.Instance.UnloadSceneAsync(escenaActual);
         SceneManagement.Instance.LoadSceneAdditiveAsync(sceneToLoad);
         SceneManagement.Instance.SetTransitionName(sceneTransitionName);
