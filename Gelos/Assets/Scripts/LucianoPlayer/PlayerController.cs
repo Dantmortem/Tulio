@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D rb;
     private Animator myAnimator;
+    public Camera cameramain;
 
     private void Awake() {
         playerControls = new PlayerControls();
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     }
     private void AdjustPlayerFacingDirection() {
         Vector3 mousePos = Mouse.current.position.ReadValue();
-        Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(transform.position);
+        Vector3 playerScreenPoint = cameramain.WorldToScreenPoint(transform.position);
 
         if (mousePos.x < playerScreenPoint.x) {
             myAnimator.SetBool("isFacingRight",false);
