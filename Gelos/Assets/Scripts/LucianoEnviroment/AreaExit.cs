@@ -14,7 +14,7 @@ public class AreaExit : MonoBehaviour
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
             Scene escena = SceneManager.GetSceneAt(i);
-            if (escena.name != "Luciano_Player" && escena.isLoaded) // Reemplaza con el nombre real de tu escena del jugador
+            if (escena.name != "Luciano_Player" && escena.isLoaded)
             {
                 escenaActual = escena.name;
                 break;

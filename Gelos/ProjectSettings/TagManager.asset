@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Moneda
   - PanelOpciones
+  - Enemy
   layers:
   - Default
   - TransparentFX
