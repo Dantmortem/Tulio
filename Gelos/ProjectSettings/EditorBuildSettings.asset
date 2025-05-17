@@ -14,6 +14,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mapas/Eli_Map2.unity
     guid: 8ffbf5fc6ad7eb34baf8cc7f5c0237b3
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map3.unity
+    guid: 877ea08c06618a747bd097b686a8736e
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map8_2.unity
+    guid: 7738685866122f544b1338db9763ce02
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map4.unity
+    guid: 469f0fde70edc1443a27cba633c4b4b9
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map5_4,6.unity
+    guid: af5a932e2f3b73c49a7803276f3af515
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map6.unity
+    guid: 288f253d947654d418ca9a18c384de26
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map9_6.unity
+    guid: d3fb408d746f34d4eb9afd82e167518f
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map10_6.unity
+    guid: 02ca58a5c6ba65546b56042532c19548
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map11_10.unity
+    guid: d82e882e45f232e47b685eee7cdbff8c
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map12_11,13.unity
+    guid: 117bdbde1c601664dbc108f709072d88
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map13_12,14,15.unity
+    guid: 868a9e081ec339c43a51689824dd995d
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map14_13.unity
+    guid: 84c46fbf54b14e841a9dc77c94df9d00
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map15_13,16.unity
+    guid: a609f25d0c621c240a97c9601d498ec7
+  - enabled: 1
+    path: Assets/Scenes/Mapas/Eli_Map7_1.unity
+    guid: d0b957d69250ce742a02657d70b18846
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b515ee2f094987c40baef8ea5cda11de,
       type: 2}
