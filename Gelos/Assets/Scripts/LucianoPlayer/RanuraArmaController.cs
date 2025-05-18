@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RanuraArmaController : MonoBehaviour
 {
-    public Item itemActual; // Variable para almacenar el item actual en la ranura de arma
+    public Item itemActual;
     public GameObject panel;
     public RanuraArmaController ranuraArmaController;
 

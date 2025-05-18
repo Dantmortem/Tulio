@@ -3706,6 +3706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 148221892}
+  - component: {fileID: 148221893}
   m_Layer: 0
   m_Name: BattleSystem
   m_TagString: Untagged
@@ -3727,9 +3728,32 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1705825452}
-  - {fileID: 1065072938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148221893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148221891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a80c744bd1ab442a2ffb11ed6d0ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugadorStats: {fileID: 1359093365}
+  enemigoStats: {fileID: 0}
+  botonAtaque: {fileID: 1688766855}
+  botonAtaqueEspecial: {fileID: 1093049815}
+  textoInformacion: {fileID: 2008397594}
+  esTurnoJugador: 1
+  posicionAnteriorBatalla: {x: 0, y: 0, z: 0}
+  cameramain: {fileID: 1121993392}
+  camarabatalla: {fileID: 1705825450}
+  panelbatalla: {fileID: 148221891}
+  playerController: {fileID: 1748782942}
+  menuPlayerStats: {fileID: 311762416}
 --- !u!1001 &152018178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11698,7 +11722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &440363375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15658,54 +15682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582828631}
   m_CullTransparentMesh: 1
---- !u!1 &583795051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 583795052}
-  - component: {fileID: 583795053}
-  m_Layer: 0
-  m_Name: BattleGrid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &583795052
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583795051}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1065072938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!156049354 &583795053
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583795051}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
 --- !u!1001 &589223433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30725,9 +30701,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 583795052}
   - {fileID: 34108473}
-  m_Father: {fileID: 148221892}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31509,6 +31484,7 @@ GameObject:
   - component: {fileID: 1093049812}
   - component: {fileID: 1093049814}
   - component: {fileID: 1093049813}
+  - component: {fileID: 1093049815}
   m_Layer: 0
   m_Name: BotonAtaqueEspecial
   m_TagString: Untagged
@@ -31573,6 +31549,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093049811}
   m_CullTransparentMesh: 1
+--- !u!114 &1093049815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093049811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1093049813}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 148221893}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: JugadorAtaca
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1113035194
 GameObject:
   m_ObjectHideFlags: 0
@@ -46422,6 +46454,7 @@ GameObject:
   - component: {fileID: 1688766852}
   - component: {fileID: 1688766854}
   - component: {fileID: 1688766853}
+  - component: {fileID: 1688766855}
   m_Layer: 0
   m_Name: BotonAtaque
   m_TagString: Untagged
@@ -46486,6 +46519,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688766851}
   m_CullTransparentMesh: 1
+--- !u!114 &1688766855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688766851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1688766853}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 148221893}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: JugadorAtaca
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1690112844
 GameObject:
   m_ObjectHideFlags: 0
@@ -47621,7 +47710,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705825449}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &1705825452
 Transform:
   m_ObjectHideFlags: 0
@@ -48744,6 +48833,35 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8626237713643976508}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1748782942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1493949382307272855, guid: ace4f6434bb52db4b8b3f280fc657734,
+    type: 3}
+  m_PrefabInstance: {fileID: 8626237713643976508}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748782931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3b8900ec02fa9419a66c58631b9ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1748782945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748782931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd421bcc797f10c48b448e9bbfc2231a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 1748782942}
+  camaraCombate: {fileID: 1705825450}
+  cameramain: {fileID: 1121993392}
+  panelbatalla: {fileID: 148221891}
+  battleManager: {fileID: 148221893}
 --- !u!1001 &1754298234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57123,7 +57241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gastas 30 de man\xE1 e infliges 60 puntos de da\xF1o"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -60859,7 +60977,7 @@ PrefabInstance:
     - target: {fileID: 1493949382307272855, guid: ace4f6434bb52db4b8b3f280fc657734,
         type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1493949382307272855, guid: ace4f6434bb52db4b8b3f280fc657734,
         type: 3}
@@ -61013,6 +61131,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9077684592071084656, guid: ace4f6434bb52db4b8b3f280fc657734,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1748782945}
+    - targetCorrespondingSourceObject: {fileID: 9077684592071084656, guid: ace4f6434bb52db4b8b3f280fc657734,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1748782936}
   m_SourcePrefab: {fileID: 100100000, guid: ace4f6434bb52db4b8b3f280fc657734, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -61033,3 +61155,4 @@ SceneRoots:
   - {fileID: 1121993393}
   - {fileID: 1695419973}
   - {fileID: 148221892}
+  - {fileID: 1065072938}

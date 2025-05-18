@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
+    public bool isMovementEnabled = true;
     [SerializeField] private float moveSpeed = 1f;
 
     private PlayerControls playerControls;
@@ -30,15 +31,25 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
-    private void PlayerInput() {
-        movement = playerControls.Movement.Move.ReadValue<Vector2>();
-
-        myAnimator.SetFloat("moveX", movement.x);
-        myAnimator.SetFloat("moveY", movement.y);
+    private void PlayerInput()
+    {
+        if (isMovementEnabled)
+        {
+            movement = playerControls.Movement.Move.ReadValue<Vector2>();
+            myAnimator.SetFloat("moveX", movement.x);
+            myAnimator.SetFloat("moveY", movement.y);
+        }
+        else
+        {
+            movement = Vector2.zero;
+        }
     }
-
-    private void Move() {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    private void Move()
+    {
+        if (isMovementEnabled)
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
     }
     private void AdjustPlayerFacingDirection() {
         Vector3 mousePos = Mouse.current.position.ReadValue();

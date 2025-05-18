@@ -10,7 +10,6 @@ public class AreaExit : MonoBehaviour
     private float waitToLoadTime = 1f;
     private void Start() 
     {
-        // Obtener la escena actual
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
             Scene escena = SceneManager.GetSceneAt(i);

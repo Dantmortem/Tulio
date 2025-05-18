@@ -18,7 +18,6 @@ public class SlotInventario : MonoBehaviour
     public PanelRanuraArma panelRanuraArma;
     void Start()
     {
-        Debug.Log("Jugador: " + jugador);
         botonSlot = GetComponent<Button>();
     }
     public void MostrarOpciones()
