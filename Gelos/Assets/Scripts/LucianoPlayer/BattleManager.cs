@@ -2,7 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+public enum BattleStatus 
+{
+    Turno_Jugador,
+    Turno_Enemigo,
+    Esperando_Accion,
+    Verificando_Victoria,
+    Siguiente_Turno
+}
 public class BattleManager : MonoBehaviour
 {
     public PlayerStats jugadorStats;
@@ -17,23 +24,30 @@ public class BattleManager : MonoBehaviour
     public GameObject panelbatalla;
     public PlayerController playerController;
     public MenuPlayerStats menuPlayerStats;
+    private BattleStatus battleStatus;
+    private bool isCombatActive;
+    public Animator jugadorAnimator;
+    public Animator enemyAnimator;
+    public UIFade uIFade;
     void Start()
     {
+        isCombatActive = true;
+        battleStatus = BattleStatus.Siguiente_Turno;
         botonAtaque.onClick.AddListener(() => JugadorAtaca(false));
         botonAtaqueEspecial.onClick.AddListener(() => JugadorAtaca(true));
-        Debug.Log("Botón Ataque asignado: " + (botonAtaque != null));
-        Debug.Log("Botón Ataque Especial asignado: " + (botonAtaqueEspecial != null));
-        Debug.Log("Método JugadorAtaca asignado a Botón Ataque: " + botonAtaque.onClick.GetPersistentEventCount());
-        Debug.Log("Método JugadorAtaca asignado a Botón Ataque Especial: " + botonAtaqueEspecial.onClick.GetPersistentEventCount());
+        StartCoroutine(CombatLoop());
     }
     public void IniciarBatalla(EnemyStats enemigoStats)
     {
         this.enemigoStats = enemigoStats;
         textoInformacion.text = "¡Comienza la batalla!";
+        isCombatActive = true;
+        battleStatus = BattleStatus.Siguiente_Turno;
+        StopAllCoroutines();
+        StartCoroutine(CombatLoop());
     }
     public void JugadorAtaca(bool esAtaqueEspecial)
     {
-        Debug.Log("Ataque realizado");
         float dañoUsado;
         if (esAtaqueEspecial)
         {
@@ -41,6 +55,7 @@ public class BattleManager : MonoBehaviour
             {
                 jugadorStats.mana -= 25;
                 dañoUsado = jugadorStats.DañoEspecialTotal;
+                jugadorAnimator.SetTrigger("AtaqueEspecial");
             }
             else
             {
@@ -51,9 +66,13 @@ public class BattleManager : MonoBehaviour
         else
         {
             dañoUsado = jugadorStats.DañoTotal;
+            jugadorAnimator.SetTrigger("Ataque");
         }
         enemigoStats.VidaTotal -= Mathf.Max(dañoUsado * (1 - Mathf.Pow((enemigoStats.DefensaTotal / 100.0f), 0.8f)), 0);
-        StartCoroutine(MostrarMensaje("Infligiste " + Mathf.RoundToInt(dañoUsado * (1 - Mathf.Pow((enemigoStats.DefensaTotal / 100.0f), 0.8f))) + " puntos de daño al enemigo", 4f));
+        botonAtaque.interactable = false;
+        botonAtaqueEspecial.interactable = false;
+        StartCoroutine(MostrarMensaje("Infligiste " + Mathf.RoundToInt(dañoUsado * (1 - Mathf.Pow((enemigoStats.DefensaTotal / 100.0f), 0.8f))) + " puntos de daño al enemigo", 2f));
+        battleStatus = BattleStatus.Turno_Enemigo;
     }
     public void EnemigoAtaca()
     {
@@ -65,6 +84,7 @@ public class BattleManager : MonoBehaviour
             {
                 enemigoStats.mana -= 25;
                 dañoUsado = enemigoStats.DañoEspecialTotal;
+                enemyAnimator.SetTrigger("AtaqueEspecialE");
             }
             else
             {
@@ -75,47 +95,74 @@ public class BattleManager : MonoBehaviour
         else
         {
             dañoUsado = enemigoStats.DañoTotal;
+            enemyAnimator.SetTrigger("AtaqueE");
         }
         jugadorStats.VidaTotal -= Mathf.Max(dañoUsado * (1 - Mathf.Pow((jugadorStats.DefensaTotal / 100.0f), 0.8f)), 0);
-        StartCoroutine(MostrarMensaje("El enemigo te infligió " + Mathf.RoundToInt(dañoUsado * (1 - Mathf.Pow((jugadorStats.DefensaTotal / 100.0f), 0.8f))) + " puntos de daño", 4f));
-        menuPlayerStats.ActualizarEstadisticasJugador();
+        StartCoroutine(MostrarMensaje("El enemigo te infligió " + Mathf.RoundToInt(dañoUsado * (1 - Mathf.Pow((jugadorStats.DefensaTotal / 100.0f), 0.8f))) + " puntos de daño", 2f));
+        battleStatus = BattleStatus.Verificando_Victoria;
     }
-    public void CambiarTurno()
+    private void SiguienteTurno()
     {
-        esTurnoJugador = !esTurnoJugador;
-        if (esTurnoJugador)
+        if (battleStatus == BattleStatus.Siguiente_Turno)
         {
-            textoInformacion.text = "Turno del jugador";
-        }
-        else
-        {
-            textoInformacion.text = "Turno del enemigo";
-            EnemigoAtaca();
+            StartCoroutine(MostrarMensaje("Turno del jugador", 2f));
+            battleStatus = BattleStatus.Turno_Jugador;
+            botonAtaque.interactable = true;
+            botonAtaqueEspecial.interactable = true;
         }
     }
-    public void VerificarGanador()
+    private void VerificarVictoria()
     {
         if (jugadorStats.VidaTotal > 0 && enemigoStats.VidaTotal <= 0)
         {
-            botonAtaque.interactable = false;
-            botonAtaqueEspecial.interactable = false;
-            StartCoroutine(MostrarMensaje("¡Victoria! Has derrotado al enemigo.", 2f));
-            GanarPuntosAtributo();
-            menuPlayerStats.ActualizarEstadisticasJugador();
+            enemyAnimator.SetTrigger("MorirE");
+            textoInformacion.text = "¡Victoria! Has derrotado al enemigo.";
+            StartCoroutine(EsperarGanarAtributos());
+            isCombatActive = false;
         }
         else if (enemigoStats.VidaTotal > 0 && jugadorStats.VidaTotal <= 0)
         {
-            botonAtaque.interactable = false;
-            botonAtaqueEspecial.interactable = false;
-            StartCoroutine(MostrarMensaje("¡Derrota! Has sido derrotado por el enemigo.", 2f));
+            jugadorAnimator.SetTrigger("Morir");
+            textoInformacion.text = "¡Derrota! Has sido derrotado por el enemigo.";
+            isCombatActive = false;
         }
-        else if (enemigoStats.VidaTotal <= 0 && jugadorStats.VidaTotal <= 0)
+        else
         {
-            botonAtaque.interactable = false;
-            botonAtaqueEspecial.interactable = false;
-            StartCoroutine(MostrarMensaje("¡Empate! Ambos personajes han sido derrotados.", 2f));
+            battleStatus = BattleStatus.Siguiente_Turno;
         }
     }
+    private IEnumerator CombatLoop()
+    {
+        while (isCombatActive)
+        {
+            switch (battleStatus)
+            {
+                case BattleStatus.Turno_Jugador:
+                    yield return new WaitForSeconds(2f);
+                    yield return null;
+                    break;
+                case BattleStatus.Turno_Enemigo:
+                    EnemigoAtaca();
+                    yield return new WaitForSeconds(2f);
+                    yield return null;
+                    break;
+                case BattleStatus.Esperando_Accion:
+                    yield return null;
+                    break;
+                case BattleStatus.Verificando_Victoria:
+                    VerificarVictoria();
+                    yield return new WaitForSeconds(3f);
+                    yield return null;
+                    break;
+                case BattleStatus.Siguiente_Turno:
+                    SiguienteTurno();
+                    yield return new WaitForSeconds(2f);
+                    yield return null;
+                    break;
+            }
+        }
+    }
+
     private void GanarPuntosAtributo()
     {
         int vitalidadGanada = Random.Range(1, 4);
@@ -134,5 +181,30 @@ public class BattleManager : MonoBehaviour
         textoInformacion.text = mensaje;
         yield return new WaitForSeconds(tiempo);
         textoInformacion.text = "";
+    }
+    private IEnumerator MostrarMensajeYEsperar(string mensaje, float tiempo, BattleStatus siguienteEstado)
+    {
+        textoInformacion.text = mensaje;
+        yield return new WaitForSeconds(tiempo);
+        textoInformacion.text = "";
+        battleStatus = siguienteEstado;
+    }
+    private IEnumerator EsperarGanarAtributos()
+    {
+        yield return new WaitForSeconds(3f);
+        GanarPuntosAtributo();
+        uIFade.FadeToBlack();
+        yield return new WaitForSeconds(2f);
+        botonAtaque.interactable = true;
+        botonAtaqueEspecial.interactable = true;
+        playerController.transform.position = posicionAnteriorBatalla;
+        playerController.isMovementEnabled = true;
+        Destroy(enemigoStats.gameObject.transform.parent.gameObject);
+        cameramain.enabled = true;
+        panelbatalla.SetActive(false);
+        camarabatalla.enabled = false;
+        playerController.cameramain = cameramain;
+        uIFade.FadeToClear();
+        UIFade.Instance.estaActivo = true;
     }
 }

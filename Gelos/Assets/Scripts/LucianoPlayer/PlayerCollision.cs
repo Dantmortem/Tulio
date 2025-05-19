@@ -17,6 +17,7 @@ public class PlayerCollision : MonoBehaviour
         {
             posicionAnteriorBatalla = transform.position;
             EnemyStats enemigoStats = collision.gameObject.GetComponentInChildren<EnemyStats>();
+            battleManager.enemyAnimator = collision.gameObject.GetComponentInChildren<Animator>();
             battleManager.posicionAnteriorBatalla = posicionAnteriorBatalla;
             battleManager.enemigoStats = enemigoStats;
             IniciarCombate(collision.gameObject);
@@ -24,8 +25,10 @@ public class PlayerCollision : MonoBehaviour
     }
     private void IniciarCombate(GameObject Enemy)
     {
+        UIFade.Instance.estaActivo = true;
         UIFade.Instance.FadeToBlack();
         StartCoroutine(TransportarACombate(Enemy));
+
     }
     private IEnumerator TransportarACombate(GameObject Enemy)
     {
@@ -41,7 +44,9 @@ public class PlayerCollision : MonoBehaviour
         Enemy.transform.position = new Vector3(PosicionX + offsetX, PosicionY, 0);
         playerController.isMovementEnabled = false;
         UIFade.Instance.FadeToClear();
+        UIFade.Instance.estaActivo = false;
         EnemyStats enemigoStats = Enemy.GetComponentInChildren<EnemyStats>();
+        battleManager.enemyAnimator = Enemy.GetComponentInChildren<Animator>();
         battleManager.IniciarBatalla(battleManager.enemigoStats);
     }
 

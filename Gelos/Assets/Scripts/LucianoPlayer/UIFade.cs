@@ -8,6 +8,9 @@ public class UIFade : MonoBehaviour
     [SerializeField] private Image fadeScreen;
     [SerializeField] private float fadeSpeed = 1f;
     private IEnumerator fadeRoutine;
+    public Canvas canvas;
+    public bool estaActivo = false;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -19,8 +22,12 @@ public class UIFade : MonoBehaviour
             Instance = this;
         }
     }
-    public void FadeToBlack() {
-        if (fadeRoutine != null) {
+    public void FadeToBlack()
+    {
+        estaActivo = true;
+        canvas.enabled = true;
+        if (fadeRoutine != null)
+        {
             StopCoroutine(fadeRoutine);
         }
 
@@ -28,7 +35,10 @@ public class UIFade : MonoBehaviour
         StartCoroutine(fadeRoutine);
     }
 
-    public void FadeToClear() {
+    public void FadeToClear()
+    {
+        estaActivo = false;
+        canvas.enabled = false;
         if (fadeRoutine != null)
         {
             StopCoroutine(fadeRoutine);
@@ -37,7 +47,17 @@ public class UIFade : MonoBehaviour
         fadeRoutine = FadeRoutine(0);
         StartCoroutine(fadeRoutine);
     }
-
+    void Update()
+    {
+        if (!estaActivo)
+        {
+            canvas.enabled = false;
+        }
+        else
+        {
+            canvas.enabled = true;
+        }
+    }
     private IEnumerator FadeRoutine(float targetAlpha) {
         while (!Mathf.Approximately(fadeScreen.color.a, targetAlpha))
         {
