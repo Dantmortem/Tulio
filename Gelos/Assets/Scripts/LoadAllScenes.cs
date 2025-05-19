@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class LoadAllScenes : MonoBehaviour
 {
     [SerializeField] ScenesList[] scenesList;
+    public static Dictionary<string, bool> escenasCargadas = new Dictionary<string, bool>();
     void Start()
     {
+        if (SceneManager.sceneCount > 1) return;
         foreach (ScenesList scene in scenesList)
         {
-            if (scene.isLoaded)
+            if (scene.isLoaded && !escenasCargadas.ContainsKey(scene.sceneName))
             {
                 SceneManager.LoadScene(scene.sceneName, LoadSceneMode.Additive);
+                escenasCargadas.Add(scene.sceneName, true);
             }
         }
     }
@@ -23,3 +26,4 @@ public class LoadAllScenes : MonoBehaviour
         public bool isLoaded;
     }
 }
+

@@ -31,12 +31,11 @@ public class AreaExit : MonoBehaviour
     }
     private IEnumerator WaitAndLoad()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(waitToLoadTime);
         SceneManagement.Instance.UnloadSceneAsync(escenaActual);
         SceneManagement.Instance.LoadSceneAdditiveAsync(sceneToLoad);
         SceneManagement.Instance.SetTransitionName(sceneTransitionName);
+        LoadAllScenes.escenasCargadas.Remove(escenaActual);
     }
-
-
 }
 

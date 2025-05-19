@@ -45628,6 +45628,83 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1643679271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643679273}
+  - component: {fileID: 1643679272}
+  m_Layer: 0
+  m_Name: LoadAllScenes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1643679272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643679271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f1e1c7cd64234468165ae487132dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenesList:
+  - sceneName: Luciano_Player
+    isLoaded: 1
+  - sceneName: Map
+    isLoaded: 1
+  - sceneName: Eli_Map2
+    isLoaded: 0
+  - sceneName: Eli_Map3
+    isLoaded: 0
+  - sceneName: Eli_Map4
+    isLoaded: 0
+  - sceneName: Eli_Map5_4,6
+    isLoaded: 0
+  - sceneName: Eli_Map6
+    isLoaded: 0
+  - sceneName: Eli_Map7_1
+    isLoaded: 0
+  - sceneName: Eli_Map8_2
+    isLoaded: 0
+  - sceneName: Eli_Map9_6
+    isLoaded: 0
+  - sceneName: Eli_Map10_6
+    isLoaded: 0
+  - sceneName: Eli_Map11_10
+    isLoaded: 0
+  - sceneName: Eli_Map12_11,13
+    isLoaded: 0
+  - sceneName: Eli_Map13_12,14,15
+    isLoaded: 0
+  - sceneName: Eli_Map14_13
+    isLoaded: 0
+  - sceneName: Eli_Map15_13,16
+    isLoaded: 0
+--- !u!4 &1643679273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643679271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.1665583, y: 2.0688033, z: -0.058095638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650861513
 GameObject:
   m_ObjectHideFlags: 0
@@ -61188,3 +61265,4 @@ SceneRoots:
   - {fileID: 1695419973}
   - {fileID: 148221892}
   - {fileID: 1065072938}
+  - {fileID: 1643679273}
